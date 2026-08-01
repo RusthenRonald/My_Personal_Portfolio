@@ -54,7 +54,8 @@
     "learnMore":   "Learn more",
     "close":       "Close",
     "moreSoon":    "More projects coming soon",
-    "coldStart":   "Free server, may take up to 1 min to wake up"
+    "coldStart":   "Free server, may take up to 1 min to wake up",
+    "unavailable": "Currently unavailable"
   },
   "certs": {
     "eyebrow":    "Education",

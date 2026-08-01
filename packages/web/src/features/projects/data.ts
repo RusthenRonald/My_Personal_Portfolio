@@ -9,8 +9,9 @@ export type Project = {
   repoLink:    string
   tag:         { pt: string; en: string }
   gradient:    string
-  image?:      string
-  coldStart?:  boolean
+  image?:       string
+  coldStart?:   boolean
+  unavailable?: boolean
 }
 
 export const projectsData: Project[] = [
@@ -85,6 +86,7 @@ export const projectsData: Project[] = [
     tag:      { pt: 'Fullstack', en: 'Fullstack' },
     gradient: 'linear-gradient(135deg, #1d2a10, #8fbf1a)',
     coldStart: true,
+    unavailable: true,
   },
  
 ]

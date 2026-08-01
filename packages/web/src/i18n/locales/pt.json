@@ -54,7 +54,8 @@
         "learnMore":   "Saiba mais",
         "close":       "Fechar",
         "moreSoon":    "Mais projetos em breve",
-        "coldStart":   "Servidor gratuito, pode levar até 1 min para acordar"
+        "coldStart":   "Servidor gratuito, pode levar até 1 min para acordar",
+        "unavailable": "Indisponível no momento"
     },
     "certs": {
         "eyebrow":    "Formação",

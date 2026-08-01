@@ -1,4 +1,4 @@
-import { ArrowUpRight, Clock } from 'lucide-react'
+import { ArrowUpRight, Clock, EyeOff } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { type Project } from './data'
 import { getStackIcon } from './stackIcons'
@@ -105,19 +105,29 @@ export default function ProjectCard({ project, lang, onLearnMore }: ProjectCardP
         )}
 
         <div className="flex items-center gap-4 mt-5">
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="inline-flex items-center gap-1.5
-              font-semibold text-sm text-[var(--color-accent)]
-              transition-gap duration-200
-              hover:gap-2.5"
-          >
-            {t('projects.viewProject')}
-            <ArrowUpRight size={15} />
-          </a>
+          {project.unavailable ? (
+            <span
+              className="inline-flex items-center gap-1.5
+                font-semibold text-sm text-[var(--color-muted)] cursor-not-allowed"
+            >
+              <EyeOff size={15} />
+              {t('projects.unavailable')}
+            </span>
+          ) : (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5
+                font-semibold text-sm text-[var(--color-accent)]
+                transition-gap duration-200
+                hover:gap-2.5"
+            >
+              {t('projects.viewProject')}
+              <ArrowUpRight size={15} />
+            </a>
+          )}
 
           <a
             href={project.repoLink}
