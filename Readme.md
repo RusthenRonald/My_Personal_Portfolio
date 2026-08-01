@@ -1,4 +1,4 @@
-# 🗂️ my-portfolio
+# my-portfolio
 
 > Personal portfolio with a React frontend and an Express backend, organized as an npm monorepo.
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 📦 Monorepo structure
+## Monorepo structure
 
 ```
 my-portfolio/
@@ -25,7 +25,7 @@ my-portfolio/
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Node.js >= 20
 - npm >= 10
@@ -33,7 +33,7 @@ my-portfolio/
 
 ---
 
-## 🚀 Getting started
+## Getting started
 
 ### 1. Clone the repo
 
@@ -75,7 +75,7 @@ npm run dev
 
 ---
 
-## 🔑 Environment variables
+## Environment variables
 
 ### `packages/api/.env`
 
@@ -91,11 +91,11 @@ PORT=3001
 VITE_API_URL=http://localhost:3001
 ```
 
-> ⚠️ Never commit `.env` files. They are listed in `.gitignore`.
+> Never commit `.env` files. They are listed in `.gitignore`.
 
 ---
 
-## 📜 Scripts
+## Scripts
 
 Run from the **repository root**.
 
@@ -115,7 +115,7 @@ npm run dev -w api
 
 ---
 
-## 🚢 Deployment
+## Deployment
 
 | Package | Host | Notes |
 |---|---|---|
@@ -124,6 +124,6 @@ npm run dev -w api
 
 ---
 
-## 📄 License
+## License
 
 MIT

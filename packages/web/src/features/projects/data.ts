@@ -47,8 +47,8 @@ export const projectsData: Project[] = [
     title:    { pt: 'Cordel Moderno', en: 'Modern Cordel' },
     category: 'front',
     description: {
-      pt: '[Descrição curta do projeto e do seu papel nele.]',
-      en: '[Short description of the project and your role in it.]',
+      pt: 'O que é: Cordel Moderno é uma página web front-end, feita em HTML e CSS, que traz a literatura de cordel — tradição popular nordestina — para um formato digital e responsivo. Meu papel: desenvolvimento completo do front-end, cuidando da estrutura em HTML e de toda a estilização em CSS.',
+      en: 'What it is: Modern Cordel is a front-end web page, built with HTML and CSS, that brings cordel literature — a traditional Brazilian folk genre — into a modern, responsive digital format. My role: full front-end development, handling the HTML structure and all the CSS styling.',
     },
     image:    '/modern_cordel_image.png',
     stack:    ['HTML', 'CSS'],

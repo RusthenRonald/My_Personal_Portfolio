@@ -5,18 +5,18 @@ export default function PhotoFrame() {
 
     return (
         <div className="flex justify-center">
-            <div className="relative w-[280px] h-[340px] md:w-[300px] md:h-[360px]">
+            <div className="relative w-[300px] h-[300px] md:w-[340px] md:h-[340px]">
                 <div
-                className="absolute inset-0 rounded-3xl"
+                className="absolute inset-0 rounded-full"
                 style={{
                     boxShadow: '0 0 0 2px var(--color-accent), 0 0 0 8px color-mix(in srgb, var(--color-accent) 15%, transparent)',
                 }}
                 />
-                <div className="relative w-full h-full rounded-3xl overflow-hidden border-2 border-[var(--color-accent)]"
+                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-[var(--color-accent)]"
                 style={{ boxShadow: '0 20px 50px -20px rgba(0,0,0,0.7)' }}
                 >
-                
-                    <img src="/rusthen_professional_photo_ofc.png" alt="Rusthen Ronald" className="w-full h-full object-cover" />
+
+                    <img src="/rusthen_professional_photo.png" alt="Rusthen Ronald" className="w-full h-full object-cover object-top" />
                 
                 <div
                     className="w-full h-full flex flex-col items-center justify-center gap-3
@@ -36,8 +36,8 @@ export default function PhotoFrame() {
 
                 {/* name badge */}
                 <div
-                    className="absolute bottom-3 left-3 px-3 py-1.5 rounded-full
-                    font-mono text-[11px] font-bold tracking-wide text-white"
+                    className="absolute bottom-5 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-full
+                    font-mono text-[11px] font-bold tracking-wide text-white whitespace-nowrap"
                     style={{ background: 'var(--color-magenta)' }}
                 >
                     {t('hero.badge')}

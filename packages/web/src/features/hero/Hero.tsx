@@ -3,7 +3,7 @@ import { ArrowRight, Download } from 'lucide-react'
 import PhotoFrame from './PhotoFrame'
 
 const stats = [
-  { value: '1.5+',  key: 'stats.years'    },
+  { value: '2+',  key: 'stats.years'    },
 ]
 
 const resumeByLang: Record<string, string> = {
