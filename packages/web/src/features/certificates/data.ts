@@ -34,6 +34,14 @@ export const certificatesData: Certificate[] = [
     link:   'https://doity.com.br/certificados/imprimir_do_evento/528fe68060de3c00f4bfe3a7c04a533affdcc61e',
   },
   {
+    year:   '2026',
+    name:   { pt: 'Proficiência em Inglês – Benchmark Test (B1)', en: 'English Proficiency – Benchmark Test (B1)' },
+    issuer: 'Benchmark',
+    description: {pt: 'Resultado do Benchmark Test indicando nível B1 de proficiência em inglês, com habilidades intermediárias de leitura, escrita, compreensão auditiva e conversação. Atualmente, meu nível de inglês está em B1+, com foco no desenvolvimento contínuo da comunicação em contextos profissionais e na compreensão de documentações técnicas.' , en: 'Benchmark Test result indicating B1 English proficiency, with intermediate reading, writing, listening, and speaking skills. My current English level is B1+, and I am continuously improving my communication skills in professional contexts and my ability to understand technical documentation.'},
+    image: '/benchmark_test.jpeg',
+    link:   '#',
+  },
+  {
     year:   '2022',
     name:   { pt: 'Curso de Inglês', en: 'English Course' },
     issuer: 'Wizard',
