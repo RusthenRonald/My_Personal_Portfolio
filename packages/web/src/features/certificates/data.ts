@@ -10,6 +10,29 @@ export type Certificate = {
 
 export const certificatesData: Certificate[] = [
     {
+      year: '2026',
+      name: {
+        pt: 'Diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas',
+        en: 'Associate Degree in Systems Analysis and Development'
+      },
+      issuer: 'Universidade Tiradentes (UNIT)',
+      description: {
+        pt: 'Conclusão do curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas pela Universidade Tiradentes (UNIT), com colação de grau em 30 de julho de 2026. Formação voltada ao desenvolvimento, análise e manutenção de sistemas computacionais, abrangendo conhecimentos em programação, desenvolvimento de software, banco de dados e soluções tecnológicas.',
+        en: 'Completion of the higher education Technology degree in Systems Analysis and Development at Universidade Tiradentes (UNIT), with graduation on July 30, 2026. The program focuses on the development, analysis, and maintenance of computer systems, covering programming, software development, databases, and technology solutions.'
+      },
+      
+      image: '/diploma_borrado.png',
+      link: '#',
+    },
+    {
+      year:   '2026',
+      name:   { pt: 'Proficiência em Inglês – Benchmark Test (B1)', en: 'English Proficiency – Benchmark Test (B1)' },
+      issuer: 'Benchmark',
+      description: {pt: 'Resultado do Benchmark Test indicando nível B1 de proficiência em inglês, com habilidades intermediárias de leitura, escrita, compreensão auditiva e conversação. Atualmente, meu nível de inglês está em B1+, com foco no desenvolvimento contínuo da comunicação em contextos profissionais e na compreensão de documentações técnicas.' , en: 'Benchmark Test result indicating B1 English proficiency, with intermediate reading, writing, listening, and speaking skills. My current English level is B1+, and I am continuously improving my communication skills in professional contexts and my ability to understand technical documentation.'},
+      image: '/benchmark_test.jpeg',
+      link:   '#',
+    },
+    {
     year:   '2026',
     name:   { pt: 'Fundamentos do Google Cloud Computing', en: 'Google Cloud Computing Foundations' },
     issuer: 'Google',
@@ -34,16 +57,18 @@ export const certificatesData: Certificate[] = [
     link:   'https://doity.com.br/certificados/imprimir_do_evento/528fe68060de3c00f4bfe3a7c04a533affdcc61e',
   },
   {
-    year:   '2026',
-    name:   { pt: 'Proficiência em Inglês – Benchmark Test (B1)', en: 'English Proficiency – Benchmark Test (B1)' },
-    issuer: 'Benchmark',
-    description: {pt: 'Resultado do Benchmark Test indicando nível B1 de proficiência em inglês, com habilidades intermediárias de leitura, escrita, compreensão auditiva e conversação. Atualmente, meu nível de inglês está em B1+, com foco no desenvolvimento contínuo da comunicação em contextos profissionais e na compreensão de documentações técnicas.' , en: 'Benchmark Test result indicating B1 English proficiency, with intermediate reading, writing, listening, and speaking skills. My current English level is B1+, and I am continuously improving my communication skills in professional contexts and my ability to understand technical documentation.'},
-    image: '/benchmark_test.jpeg',
+    year:   '2025',
+    name:   { pt: 'Certificado de Idiomas – Inglês (Linguistic)', en: 'English Certificate – Linguistic' },
+    issuer: 'Wizard',
+    description: {
+    pt: 'Conclusão do curso de inglês Linguistic pela Wizard by Pearson, com carga horária total de 140 horas. O Linguistic corresponde a uma etapa mais avançada da formação em inglês, indo além do nível básico e proporcionando o aprofundamento dos conhecimentos no idioma, com foco no desenvolvimento das habilidades linguísticas e na ampliação da capacidade de comunicação em inglês.',
+    en: 'Completion of the Linguistic English course at Wizard by Pearson, with a total workload of 140 hours. Linguistic represents a more advanced stage of English language learning, going beyond the basic level and providing further development of language knowledge, with a focus on linguistic skills and enhancing communication abilities in English.'},
+    image: '/certificado-curso-ingles.jpeg',
     link:   '#',
   },
   {
     year:   '2022',
-    name:   { pt: 'Curso de Inglês', en: 'English Course' },
+    name:   { pt: 'Certificado de Idioma – Inglês (Teens)', en: 'English Certificate – Teens' },
     issuer: 'Wizard',
     description: {pt: 'Conclusão do programa Wizard Teens, com foco em comunicação em inglês, incluindo speaking, listening, reading e writing, além de vocabulário e gramática aplicados ao dia a dia.' , en: 'Completion of the Wizard Teens program, focused on English communication skills, including speaking, listening, reading, and writing, as well as vocabulary and grammar applied to everyday situations.'},
     image: '/english_certificate.jpg',

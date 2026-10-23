@@ -37,32 +37,33 @@ export default function CertCard({ cert, lang, onLearnMore }: CertCardProps) {
       <div className="h-px bg-[var(--color-line)] mt-auto" />
 
       <div className="flex items-center gap-4">
-        <a
-          href={cert.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
-          className="inline-flex items-center gap-1.5
-            font-semibold text-sm text-[var(--color-accent)]
-            transition-all duration-200
-            hover:gap-2.5"
-        >
-          {t('certs.credential')}
-          <ArrowUpRight size={15} />
-        </a>
-
-        <button
-          onClick={(e) => {
-            e.stopPropagation()
-            onLearnMore(cert)
-          }}
-          className="inline-flex items-center gap-1.5 ml-auto
-            font-semibold text-sm text-[var(--color-muted)]
-            transition-colors duration-200 cursor-pointer
-            hover:text-[var(--color-text)]"
-        >
-          {t('certs.learnMore')}
-        </button>
+        {cert.link && cert.link !== '#' ? (
+          <a
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="inline-flex items-center gap-1.5
+              font-semibold text-sm text-[var(--color-accent)]
+              transition-all duration-200 hover:gap-2.5"
+          >
+            {t('certs.credential')}
+            <ArrowUpRight size={15} />
+          </a>
+        ) : (
+          <button
+            onClick={(e) => {
+              e.stopPropagation()
+              onLearnMore(cert)
+            }}
+            className="inline-flex items-center gap-1.5
+              font-semibold text-sm text-[var(--color-accent)]
+              transition-all duration-200 hover:gap-2.5 cursor-pointer"
+          >
+            {t('certs.viewPhoto')}
+            <ArrowUpRight size={15} />
+          </button>
+        )}
       </div>
     </div>
   )

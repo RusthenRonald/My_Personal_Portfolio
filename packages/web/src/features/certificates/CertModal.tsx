@@ -43,7 +43,7 @@ export default function CertModal({ cert, lang, onClose }: CertModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         <div
-          className="relative h-32 flex items-end p-4 overflow-hidden"
+          className="relative h-[250px] flex items-end p-4 overflow-hidden"
           style={{ background: cert.gradient ?? 'linear-gradient(135deg, #1d2a10, #8fbf1a)' }}
         >
           {cert.image && (
@@ -90,18 +90,31 @@ export default function CertModal({ cert, lang, onClose }: CertModalProps) {
           </div>
 
           <div className="flex items-center gap-4 mt-6">
-            <a
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5
-                font-semibold text-sm text-[var(--color-accent)]
-                transition-all duration-200
-                hover:gap-2.5"
-            >
-              {t('certs.credential')}
-              <ArrowUpRight size={15} />
-            </a>
+            {cert.link && cert.link !== '#' ? (
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5
+                  font-semibold text-sm text-[var(--color-accent)]
+                  transition-all duration-200 hover:gap-2.5"
+              >
+                {t('certs.credential')}
+                <ArrowUpRight size={15} />
+              </a>
+            ) : cert.image ? (
+              <a
+                href={cert.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5
+                  font-semibold text-sm text-[var(--color-accent)]
+                  transition-all duration-200 hover:gap-2.5"
+              >
+                {t('certs.viewPhoto')}
+                <ArrowUpRight size={15} />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
